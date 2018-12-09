@@ -1,0 +1,43 @@
+$ curl -s -XPOST -d 'tag=SHODAN' http://api.greynoise.io:8888/v1/query/tag | jq '.'
+{
+  "tag": "SHODAN",
+  "status": "ok",
+  "records": [
+    {
+      "ip": "71.6.158.166",
+      "name": "SHODAN",
+      "first_seen": "2017-09-27T02:26:31.957Z",
+      "last_updated": "2017-10-19T01:35:34.114Z",
+      "confidence": "high",
+      "intention": "benign",
+      "category": "actor",
+      "metadata": {
+        "org": "SingleHop, Inc.",
+        "rdns": "census1.shodan.io",
+        "rdns_parent": "shodan.io",
+        "datacenter": "SingleHop",
+        "asn": "AS32475",
+        "os": "Linux 3.11+",
+        "link": "Ethernet or modem",
+        "tor": false
+    },
+    {
+      "ip": "71.6.158.167",
+      "name": "SHODAN",
+      "first_seen": "2017-09-27T02:26:31.957Z",
+      "last_updated": "2017-10-19T01:35:34.114Z",
+      "confidence": "high",
+      "intention": "benign",
+      "category": "actor",
+      "metadata": {
+        "org": "SingleHop, Inc.",
+        "rdns": "census2.shodan.io",
+        "rdns_parent": "shodan.io",
+        "datacenter": "SingleHop",
+        "asn": "AS32475",
+        "os": "Linux 3.11+",
+        "link": "Ethernet or modem",
+        "tor": false
+      }
+   }
+}
